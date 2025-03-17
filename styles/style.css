@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: #a64c4c;
+}
+body main section.main-area {
+  background-color: white;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+  padding: 10px 0px;
+}
+body main section.main-area div.info h2 {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: #a64c4c;
+  font-size: 1.25rem;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  border-radius: 18px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.main-area div.img-area {
+  flex-basis: 450px;
+}
+body main section.main-area div.img-area img {
+  width: 100%;
+}
+body main section.my-skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 20px 0;
+  align-items: center;
+}
+body main section.my-skills div.title {
+  text-align: center;
+  flex: 1;
+}
+body main section.my-skills div.title h2 {
+  font-size: 48px;
+}
+body main section.my-skills div.skill-contents {
+  flex: 1.05;
+}
+body main section.my-skills div.skill-contents h3 {
+  font-weight: bold; /* 加粗字體 */
+  margin-top: 20px; /* 增加標題之間的間距 */
+}
+body main section.my-skills:hover {
+  background-color: rgba(248, 155, 155, 0.2823529412);
+}
+body main section.resume {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+}
+body main section.resume div.text {
+  text-align: center;
+  color: #a64c4c;
+}
+body main section.resume div.text h2 {
+  margin-top: 100px;
+  font-size: 2.5rem;
+}
+body main section.resume div.table-area {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  flex: 1 1 500px;
+  padding: 2rem;
+}
+body main section.resume div.table-area table {
+  border-collapse: collapse;
+}
+body main section.resume div.table-area table tr {
+  border-bottom: 2px solid #a64c4c;
+  transition: all 0.2s ease;
+}
+body main section.resume div.table-area table tr:hover {
+  background-color: rgba(248, 155, 155, 0.2823529412);
+}
+body main section.resume div.table-area table tr td {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.main-area div.info h1 {
+    margin-top: 20px;
+  }
+  body main section.main-area div.info a {
+    margin-top: 20px;
+  }
+  body main section.resume {
+    padding: 2rem 1rem;
+  }
+  body main section.my-skills {
+    flex-direction: column;
+    padding: 100px 60px 100px 80px;
+  }
+  body main section.my-skills div.title {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+  body main section.my-skills div.skill-contents {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+  body main section.main-area {
+    padding: 50px;
+  }
+  body main section.main-area div.info h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  body main section.main-area div.info a {
+    margin-top: 20px;
+  }
+  body main section.resume {
+    padding: 2rem 1rem;
+  }
+  body main section.my-skills {
+    flex-direction: column;
+    padding: 70px 50px 70px 70px;
+  }
+  body main section.my-skills div.title {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+  body main section.my-skills div.skill-contents {
+    flex: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

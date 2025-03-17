@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: #a64c4c;
+}
+body main section.main-area {
+  background-color: white;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: #a64c4c;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  border-radius: 18px;
+  margin-top: 2rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.main-area div.img-area {
+  flex-basis: 450px;
+}
+body main section.main-area div.img-area img {
+  width: 100%;
+}
+body main section.about-me {
+  background-color: rgb(206, 155, 155);
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+body main section.about-me div.description {
+  width: 60%;
+  text-align: center;
+}
+body main section.about-me div.description h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+body main section.about-me div.description div.progress-bar-area {
+  margin-top: 2rem;
+  text-align: center;
+}
+body main section.about-me div.description div.progress-bar-area p {
+  margin-top: 0.75rem;
+  color: white;
+  font-weight: bold;
+}
+body main section.about-me div.description div.progress-bar-area .progress-bar {
+  background-color: #a64c4c;
+}
+body main section.resume {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+}
+body main section.resume div.text {
+  text-align: center;
+  color: #a64c4c;
+}
+body main section.resume div.text h2 {
+  font-size: 2.5rem;
+}
+body main section.resume div.table-area {
+  flex: 1 1 500px;
+  padding: 2rem;
+}
+body main section.resume div.table-area table {
+  border-collapse: collapse;
+}
+body main section.resume div.table-area table tr {
+  border-bottom: 2px solid #a64c4c;
+  transition: all 0.2s ease;
+}
+body main section.resume div.table-area table tr:hover {
+  background-color: #e09292;
+}
+body main section.resume div.table-area table tr td {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.about-me div.description {
+    width: 80%;
+  }
+  body main section.resume {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
